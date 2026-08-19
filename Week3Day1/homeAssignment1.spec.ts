@@ -3,7 +3,6 @@ import test from "@playwright/test";
 test('Create a Lead using CSS Selectors',async({page})=>{
 
     await page.goto('http://leaftaps.com/opentaps/control/main')
-    //democsr2, crmsfa
     await page.locator("input[id=username]").fill('democsr2')
     await page.locator("input[id=password]").fill('crmsfa')
     await page.locator(".decorativeSubmit").click()
